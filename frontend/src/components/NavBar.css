@@ -1,0 +1,58 @@
+/* Custom Navbar Styles */
+.custom-navbar {
+    background: linear-gradient(45deg, #ff6b81, #ff7f50, #f39c12); /* Gradient background */
+    background-size: 300% 300%;
+    animation: gradientShift 6s ease infinite;
+    padding: 10px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: #fff; /* Toggler color */
+}
+
+.custom-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #fff !important;
+}
+
+.custom-link:hover {
+    color: #ff6b81 !important; /* Hover effect color */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Glow effect */
+}
+
+.custom-navbar .navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Additional media query for responsiveness */
+@media (max-width: 991px) {
+    .custom-navbar {
+        background: linear-gradient(45deg, #ff6b81, #ff7f50, #f39c12); /* Keep gradient on small screens */
+    }
+
+    .navbar-toggler-icon {
+        background-color: #fff;
+    }
+}

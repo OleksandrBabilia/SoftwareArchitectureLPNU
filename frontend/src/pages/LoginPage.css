@@ -1,0 +1,63 @@
+/* Login Page Background */
+.login-container {
+    height: 100vh;
+}
+
+/* Card Styling */
+.custom-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #ff6b81; /* Pinkish focus border */
+    box-shadow: 0 0 5px rgba(255, 107, 129, 0.5);
+}
+
+/* Button Styling */
+.btn-custom {
+    background-color: #ff6b81; /* Custom pink button */
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff7f50; /* Lighter orange-pink on hover */
+    transform: scale(1.05);
+}
+
+/* Error Message Styling */
+.alert-danger {
+    background-color: #ff6b81;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .custom-card {
+        padding: 20px;
+    }
+    .login-container {
+        padding: 10px;
+    }
+}
+
+/* Link Styling */
+a.text-primary {
+    color: #ff6b81 !important; /* Pink color for the Sign Up link */
+}
+
+a.text-primary:hover {
+    color: #ff7f50 !important;
+}

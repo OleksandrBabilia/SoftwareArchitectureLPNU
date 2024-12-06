@@ -1,0 +1,96 @@
+/* Background Gradient */
+.signup-form-container {
+    background: linear-gradient(45deg, #ff6b81, #ff7f50, #f39c12); /* Gradient background */
+    background-size: 300% 300%;
+    animation: gradientShift 6s ease infinite;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Sign Up Form Header */
+.signup-form-header {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Form Inputs */
+.form-control {
+    border-radius: 10px; /* Rounded corners */
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+}
+
+/* Focused Input Field */
+.form-control:focus {
+    border-color: #ff6b81; /* Light pinkish border on focus */
+    box-shadow: 0 0 8px rgba(255, 107, 129, 0.5); /* Glow effect */
+}
+
+/* Sign Up Button */
+.signup-btn {
+    background-color: #ff6b81; /* Pinkish button */
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.signup-btn:hover {
+    background-color: #ff7f50; /* Change to a slightly different shade of pink */
+    box-shadow: 0 0 10px rgba(255, 107, 129, 0.6); /* Glow effect */
+}
+
+/* Sign Up Form Links */
+.signup-links a {
+    color: #ff6b81;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-links a:hover {
+    color: #f39c12; /* Orange color on hover */
+}
+
+/* Image Section */
+.signup-image {
+    max-height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.signup-image:hover {
+    transform: scale(1.05); /* Zoom effect */
+}

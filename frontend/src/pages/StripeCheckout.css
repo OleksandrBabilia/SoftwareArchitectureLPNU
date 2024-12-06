@@ -1,0 +1,83 @@
+/* StripeCheckout.css */
+.stripe-checkout-container {
+    background: linear-gradient(45deg, #ff6b81, #ff7f50, #f39c12);
+    background-size: 300% 300%;
+    animation: gradientShift 6s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.stripe-checkout-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.benefits-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.benefits-list li {
+    margin: 10px 0;
+}
+
+.price-info {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.checkout-button-container {
+    margin-top: 20px;
+}
+
+.checkout-button {
+    background-color: #ff6b81;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #ff7f50;
+    transform: scale(1.05);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

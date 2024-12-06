@@ -1,0 +1,85 @@
+/* Gradient Background for About Page */
+.about-container {
+    background: linear-gradient(135deg, #ff6b81, #f39c12); /* Gradient from pink to yellow */
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: 'Poppins', sans-serif; /* Choose a clean font */
+}
+
+/* Header Styles */
+.about-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Paragraph Styles */
+.about-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* List Styles for What We Offer */
+.about-container ul {
+    list-style-type: none;  /* Remove default bullets */
+    padding-left: 0;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-container ul li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.about-container ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    color: #f39c12; /* Gold checkmark */
+}
+
+/* Subheading Styles */
+.about-container h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Button Style (Return to Home) */
+.about-container .home-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    background: #ff6b81;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.about-container .home-btn:hover {
+    background: #f39c12;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

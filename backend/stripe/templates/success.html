@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Full background gradient */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff6b81, #ff7f50, #f39c12); /* Gradient background */
+            background-size: 300% 300%;
+            animation: gradientShift 6s ease infinite;
+        }
+
+        /* Gradient animation */
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .success-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .success-container h1 {
+            color: #4caf50;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .success-container p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .transaction-id {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #0066cc;
+            word-wrap: break-word;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6b81;
+            padding: 15px 30px;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff7f50;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        .home-button {
+            display: inline-block;
+            background-color: #007bff;
+            padding: 12px 25px;
+            border-radius: 50px;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+
+        .home-button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>Payment Successful!</h1>
+        <p>Thank you for upgrading to our premium subscription. You now have access to more books, priority processing of your orders, and you're supporting our wonderful book world!</p>
+        <p>Your transaction was completed successfully.</p>
+        <div class="transaction-id">
+            <strong>Transaction ID:</strong> {{ transaction_uuid }}
+        </div>
+        <a href="http://localhost:3000/" class="cta-button">Return to Home</a>
+    </div>
+</body>
+</html>

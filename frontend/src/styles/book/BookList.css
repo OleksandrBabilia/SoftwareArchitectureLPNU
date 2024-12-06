@@ -1,0 +1,57 @@
+/* src/pages/BookList.css */
+
+.scrollable-container {
+    max-height: 300px; /* Set the height for the scrollable box */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding-right: 10px; /* To avoid text cutoff due to scrollbar */
+}
+
+/* Button Styles */
+.btn-custom {
+    background: linear-gradient(45deg, #ff6b81, #ff7f50); /* Gradient background */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+}
+
+.btn-custom:hover {
+    background-color: #ff7f50; /* Darken the color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.btn-custom:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 107, 129, 0.6); /* Outline effect */
+}
+
+/* Disabled button state */
+.btn-custom.disabled,
+.btn-custom:disabled {
+    background: #ccc; /* Grey out the disabled button */
+    cursor: not-allowed;
+    transform: none; /* Disable hover effect */
+}
+
+.btn-secondary {
+    background-color: #f39c12;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e67e22; /* Darken the secondary button on hover */
+}
+
+.btn-secondary.active {
+    background-color: #d35400; /* Active page number button */
+}
+
